@@ -1,0 +1,250 @@
+:root {
+/*-- COLOR SETTINGS --*/
+  --color-primary-background: #FFFFFF;     /* pirmary-background */
+  --color-primary-brand: #4D5AE5;          /* primary-brand, logo-accent */
+  --color-primary-brand-focus: #404BBF;    /* primary-brand-focus */
+  --color-dark: #2E2F42;                   /* dark */
+  --color-success: #31D0AA;                /* success */
+  --color-body-text: #434455;              /* body-text */
+  --color-helper-text: #8E8F99;            /* helper-text */
+  --color-accent: #E7E9FC;                 /* accent-color */
+  --color-light-mode-background: #F4F4FD;	/* light-mode-background */
+
+/*-- FONT SETTINGS --*/
+  --font-logo: 'Raleway', sans-serif;        /* logo */
+  --font-primary: 'Roboto', sans-serif ;  	 /* primary */
+
+/*-- FONT WEIGHT --*/
+  --font-weight-logo: 800; 			             /* logo */
+  --font-weight-regular: 400;  	         		 /* regular */
+  --font-weight-bold: 600; 			             /* bold */
+
+/*-- FONT SIZES --*/
+  --font-size-logo: 18px;			               /* logo */
+  --font-size-body: 16px;			               /* body */
+  --font-size-h1: 56px; 			               /* h1, hero, title */
+  --font-size-h2: 36px; 			               /* h2 */
+  --font-size-h3: 20px; 			               /* h3 */
+  --font-size-small: 12px;		             	 /* small */
+  --font-size-bold: 16px;			               /* bold */
+  --font-size-button: 16px;		               /* button */
+  --font-size-link: 16px;			               /* link */
+
+/*-- LINE HEIGHT --*/
+  --line-height-logo: 1.33;			            /* logo */
+  --line-height-h1: 1.07; 			            /* h1, hero, title */
+  --line-height-h2: 0.67; 			            /* h2 */
+  --line-height-h3: 1.2; 			              /* h3 */
+  --line-height-small: 1.33;	          		/* small */
+  --line-height-bold: 1.5;		            	/* bold */
+  --line-height-button: 1.5;	          		/* button */
+  --line-height-link: 1.5;		            	/* link */
+
+/*-- LETTER SPACING --*/
+  --letter-spacing-logo: 0.03em; 		        /* logo */
+  --letter-spacing-primary: 0.02em; 		    /* body */
+  --letter-spacing-secondary: 0.04em; 		  /* button, smaller text */
+}
+
+.horizontal {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+}
+
+body {
+  background: var(--color-primary-background);
+  color: var(--color-body-text);
+  font-family: var(--font-primary);
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-regular);
+  letter-spacing: var(--letter-spacing-primary);
+}
+
+.small-text {
+  font-size: var(--font-size-small);
+  letter-spacing: var(--letter-spacing-secondary);
+}
+
+.bold-text {
+  font-weight: var(--font-weight-bold);
+}
+
+.logo {
+  color: var(--color-dark);
+  font-family: var(--font-logo);
+  font-size: var(--font-size-logo);
+  font-weight: var(--font-weight-logo);
+  letter-spacing: var(--line-spacing-logo);
+  line-height: var(--line-height-logo);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.logo-accent {
+  color: var(--color-primary-brand);
+}
+
+.logo-accent:hover,
+.logo-accent:focus,
+.logo-accent:active {
+  color: var(--color-primary-brand-focus);
+}
+
+.logo-primary {
+  color: var(--color-dark);
+}
+
+.logo-secondary {
+  color: var(--color-primary-background);
+}
+
+.navigation {
+  color: var(--color-dark);
+  font-weight: var(--font-weight-bold);
+  text-decoration: none;
+}
+
+.navigation:hover {
+  color: var(--color-body-text);
+}
+
+.navigation:active {
+  color: var(--color-primary-brand);
+}
+
+.contacts {
+  color: var(--color-body-text);
+  text-decoration: none;
+}
+
+.contacts:hover {
+  color: var(--color-primary-brand);
+}
+
+/*-- HERO --*/
+.hero {
+  background-color: var(--color-dark);
+  color: var(--color-primary-background);
+}
+
+.h1 {
+  color: var(--color-primary-background);
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-h1);
+}
+
+/*-- SECTIONS --*/
+.h2 {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-bold);
+  text-transform: capitalize;
+}
+
+.h3 {
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-bold);
+}
+
+.team {
+  background: var(--color-light-mode-background);
+}
+
+.item-team {
+  background: var(--color-primary-background);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  padding: 0px 0px 32px 0px;
+}
+
+.footer {
+  background: var(--color-dark);
+}
+
+.footer-text {
+  color: var(--color-primary-background);
+}
+
+.content-item {
+  background: var(--color-primary-background);
+  border-radius: 0px 0px 4px 4px;
+  border: 0.5px solid #f4f4fd;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+/*-- BUTTONS --*/
+.btn {
+  align-items: center;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  font-weight: var(--font-weight-bold);
+  height: 48px;
+  justify-content: center;
+  left: 93px;
+  letter-spacing: var(--letter-spacing-secondary);
+  line-height: var(--line-height-button);
+  margin-left: 24px;
+  padding: 8px 16px 8px 16px;
+  top: 0px;
+}
+
+.primary-btn,
+.secondary-btn:hover,
+.secondary-btn:focus {
+  background: var(--color-primary-brand);
+  border: 0;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  color: var(--color-primary-background);
+}
+
+.secondary-btn {
+  background: var(--color-light-mode-background);
+  border: 1px solid var(--color-accent);
+  color: var(--color-primary-brand);
+  width: 116px;
+}
+
+.primary-btn:hover,
+.primary-btn:focus {
+  background: var(--color-primary-brand);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.primary-btn:active,
+.secondary-btn:active {
+  background: var(--color-primary-brand-focus);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+/*-- LISTS --*/
+.list {
+  list-style: none;
+}
+
+/*-- LINKS --*/
+.link {
+  color: var(--color-body-text);
+  font-weight: var(--font-weight-bold);
+  text-decoration: Underline;
+}
+
+.link:hover,
+.link:focus,
+.link:active {
+  color: var(--color-primary-brand);
+}
+
+/*-- HIDDEN --*/
+.visually-hidden {
+  border: 0;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
