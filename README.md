@@ -1,2 +1,3 @@
-2022-12-04 goit-markup-hw-02
-https://bertrammiller.github.io/goit-markup-hw-02/
+# goit-markup-hw-02
+## Date: 2022/12/04
+https://II-777.github.io/goit-markup-hw-02/
